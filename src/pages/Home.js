@@ -3,6 +3,7 @@ import Mountain1 from '../assets/mountain_01.png'
 import Mountain2 from '../assets/mountain_02.png'
 import Tree1 from '../assets/trees_01.png'
 import Tree2 from '../assets/trees_02.png'
+import Tree3 from '../assets/trees_03.png'
 import Man from '../assets/man.png'
 import Plants from '../assets/plants.png'
 import '../styles/Home.css'
@@ -21,8 +22,19 @@ export default function Home() {
                 <img src={Plants} id="plant" alt=''></img>
             </section>
             <section className='sec'>
-                <h2>Anmol Srivastava</h2>
-                <p>I am a Web Developer</p>
+                <div className='ContainerBox'>
+                    <p className='uptxt'>Hi</p>
+                    <div className='splitText'>
+                        <p className='Im'>I am</p>
+                        <p className='myname'>Anmol Srivastava</p>
+                    </div>
+
+                    <p className='dev'>I am a Web Developer</p>
+                </div>
+                <div className='BottomDesign'>
+                    <img className='treeImg' src={Tree3}></img>
+                    {/* <img className='treeImg' src={Mountain1}></img> */}
+                </div>
             </section>
         </div >
     )
