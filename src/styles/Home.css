@@ -1,0 +1,41 @@
+.parallax{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.parallax img{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    pointer-events: none;
+}
+::-webkit-scrollbar{
+    display: none;
+}
+
+#text{
+    position: absolute;
+    top: 30%;
+    transform: translateY(-50%);
+    font-size: 4em;
+    z-index: 1;
+}
+.textArea{
+    display: flex;
+    flex-direction: column;
+}
+.sec{
+    position: relative;
+    background: #112434;
+}
+h2{
+    margin: 0;
+    padding: 0;
+}
+p{
+    margin: 0;
+    padding: 0;
+}
