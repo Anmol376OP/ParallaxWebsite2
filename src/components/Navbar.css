@@ -4,6 +4,7 @@
     padding: 0 5% 0 5%;
     font-size: large;
     align-items: center;
+    transition: width 2s ease-in;
 }
 .nav{
     display: flex;
@@ -25,6 +26,9 @@ li{
     border-radius: 25px;
     color: white;
 }
+.i1{
+    display: none;
+}
 
 @media (max-width: 700px){
     .Container .nav.inactive{
@@ -35,29 +39,41 @@ li{
         width: 30px;
         height: 30px;
         background-color: aquamarine;
+        background: transparent;
+        /* background-image: url('../assets/menu.png'); */
         background-position: center;
     }
     .toggleactive{
         width: 30px;
         height: 30px;
-        background-color: whitesmoke;
+        background: transparent;
+        /* background-color: aqua; */
+        background-image: url('../assets/close.jpg');
         background-position: center;
         z-index: 2  ;
         gap: 0;
     }
     .Container .active{
-        position: fixed;
+        position: absolute;
         top: 0;
         left: 0;
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        width: 100%;
+        width: 75%;
         height: 100vh;
         background-color: rgb(84,164,219);
         padding: 0;
         z-index: 1;
         margin: 0;
     }
+    .i1{
+        display: block;
+        height: 30px;
+        width: 30px;
+    }
+}
+.disappear{
+    display: none;
 }
