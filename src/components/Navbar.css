@@ -48,7 +48,6 @@ li{
         height: 30px;
         background: transparent;
         /* background-color: aqua; */
-        background-image: url('../assets/close.jpg');
         background-position: center;
         z-index: 2  ;
         gap: 0;

@@ -33,7 +33,6 @@ export default function Home() {
                 </div>
                 <div className='BottomDesign'>
                     <img className='treeImg' src={Tree3}></img>
-                    {/* <img className='treeImg' src={Mountain1}></img> */}
                 </div>
             </section>
         </div >
