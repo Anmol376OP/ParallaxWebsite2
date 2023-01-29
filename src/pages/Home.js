@@ -1,13 +1,15 @@
 import React from 'react'
 import '../styles/Home.css'
 import Navbar from '../components/Navbar'
-import About from './About'
 import { Parallax, ParallaxLayer } from '@react-spring/parallax'
 
 export default function Home() {
     return (
         <div>
-            <Parallax pages={3} style={{ top: '0', left: '0' }} class="animation">
+            <Parallax pages={2} style={{ top: '0', left: '0' }} class="animation">
+                <ParallaxLayer offset={0} style={{ zIndex: "20" }}>
+                    <Navbar />
+                </ParallaxLayer>
                 <ParallaxLayer offset={0} speed={0.25}>
                     <div class="animation_layer parallax" id="artback"></div>
                 </ParallaxLayer>
@@ -47,9 +49,6 @@ export default function Home() {
                             <p className='dev'>I am a Web Developer</p>
                         </div>
                     </section>
-                </ParallaxLayer>
-                <ParallaxLayer offset={2}>
-                    <About />
                 </ParallaxLayer>
             </Parallax>
         </div>

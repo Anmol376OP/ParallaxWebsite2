@@ -7,6 +7,11 @@
     transition: width 2s ease-in;
     z-index: 15;
 }
+.NavContainer h2{
+    font-weight: bold;
+    color:#210002;
+
+}
 .nav{
     display: flex;
     flex-direction: row;
@@ -18,11 +23,13 @@ li{
 }
 .elem{
     text-decoration: none;
-    color: black;
-    padding: 0.75vh 1.25vh;
+    color:#210002;
+    padding: 1vh 3vh;
+    font-weight: bold  ;
+    
 }
 .NavContainer .nav li .elem:hover{
-    background-color: rgb(20,68,92);
+    background-color: rgba(122,39,27,0.8);
     overflow: hidden;
     border-radius: 25px;
     color: white;
@@ -62,8 +69,8 @@ li{
         align-items: center;
         flex-direction: column;
         width: 75%;
-        height: 100vh;
-        background-color: rgb(84,164,219);
+        height: 100%;
+        background-color: orange;
         padding: 0;
         z-index: 10;
         margin: 0;
