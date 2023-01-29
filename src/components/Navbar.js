@@ -7,7 +7,7 @@ import closeImg from '../assets/close.png';
 export default function Navbar() {
     const [isActive, setActive] = useState(false)
     return (
-        <div className="Container">
+        <div className="NavContainer">
             <h2>Anmol</h2>
             <div className={isActive ? "toggleactive toggle" : "toggle"} onClick={() => { setActive(!isActive) }}>
                 <img className={!isActive ? "i1" : "disappear"} src={menuImg}></img>

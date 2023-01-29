@@ -1,20 +1,59 @@
-.parallax{
+.animation, .animation_layer {
+	height: 145vh;
+}
+
+.animation {
+    display: block;
     position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+    z-index: 10;
 }
-.parallax img{
+
+.animation_layer {
+	background-position: bottom center;
+	background-size: auto 1100px;
+	background-repeat: repeat-x;
+	width: 100%;
+	position: absolute;
+}
+.animation_layer.parallax {
+	position: fixed;
+}
+#artback{
+    background-image: url('../assets/background.png');
+}
+#mountain{
+    background-image: url('../assets/mountains.png');
+}
+#jungle1{
+    background-image: url('../assets/jungle1.png');
+}
+#jungle2{
+    background-image: url('../assets/jungle2.png');
+}
+
+#jungle3{
+    background-image: url('../assets/jungle3.png');
+}
+
+#jungle4{
+    background-image: url('../assets/jungle4.png');
+}
+#jungle5{
+    background-image: url('../assets/jungle5.png');
+}
+#manmountain{
+    background-image: url('../assets/man_on_mountain.png');
+}
+#Text{
+    color: white;
+    font-size: 50px;
     position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    pointer-events: none;
+    top: 20%;
 }
-::-webkit-scrollbar{
+
+/* ::-webkit-scrollbar{
     display: none;
-}
+} */
 
 #text{
     position: absolute;
@@ -30,25 +69,34 @@
 }
 .sec{
     position: relative;
-    background: #112434;
+    background: #210002;
+    height: 140vh;
 }
 .uptxt{
     color: white;
     margin: 0;
+    font-size: 35px;
     padding: 0 0 0 5.25vw;
+}
+.Im{
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-size: 80px;
+    padding: 0 0 0 5vw;
 }
 .myname{
     margin: 0;
     padding: 0;
     color: rgb(199, 134, 23);
-    font-size: 5vw;
+    font-size: 80px;
     padding: 0 0 0 1.5vw;
 }
 .dev{
     margin: 0;
     padding: 0 0 0 5.25vw;
     color: white;
-    font-size: 2.5vw;
+    font-size: 45px;
 }
 .ContainerBox{
     width: 100%;
@@ -62,13 +110,7 @@
     display: flex;
     flex-direction: row;
 }
-.Im{
-    margin: 0;
-    padding: 0;
-    color: white;
-    font-size: 5vw;
-    padding: 0 0 0 5vw;
-}
+
 .BottomDesign{
     position: relative;
     display: flex;
@@ -82,4 +124,7 @@
     left: 0;
     width: 100%;
     /* height: 100vh; */
+}
+@media(max-width:962px) {
+    
 }

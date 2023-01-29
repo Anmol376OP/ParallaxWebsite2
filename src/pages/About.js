@@ -4,7 +4,7 @@ export default function About() {
     return (
         <div className='body'>
             <div className='Container'>
-                hi
+                Hey there I'm Anmol
             </div>
         </div>
     )

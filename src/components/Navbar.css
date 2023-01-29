@@ -1,10 +1,11 @@
-.Container{
+.NavContainer{
     display: flex;
     justify-content: space-between;
     padding: 0 5% 0 5%;
     font-size: large;
     align-items: center;
     transition: width 2s ease-in;
+    z-index: 15;
 }
 .nav{
     display: flex;
@@ -20,7 +21,7 @@ li{
     color: black;
     padding: 0.75vh 1.25vh;
 }
-.Container .nav li .elem:hover{
+.NavContainer .nav li .elem:hover{
     background-color: rgb(20,68,92);
     overflow: hidden;
     border-radius: 25px;
@@ -31,7 +32,7 @@ li{
 }
 
 @media (max-width: 700px){
-    .Container .nav.inactive{
+    .NavContainer .nav.inactive{
         display: none;
     }
     .toggle{
@@ -52,7 +53,7 @@ li{
         z-index: 2  ;
         gap: 0;
     }
-    .Container .active{
+    .NavContainer .active{
         position: absolute;
         top: 0;
         left: 0;
