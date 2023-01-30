@@ -3,7 +3,7 @@
 }
 
 .animation, .animation_layer {
-	height: 145vh;
+	height: 1200px;
 }
 
 .animation {
@@ -14,7 +14,7 @@
 
 .animation_layer {
 	background-position: bottom center;
-	background-size: auto 1100px;
+	background-size: auto 1200px;
 	background-repeat: repeat-x;
 	width: 100%;
 	position: absolute;
@@ -24,6 +24,7 @@
 }
 #artback{
     background-image: url('../assets/background.png');
+    /* transform: scale(1.2); */
 }
 #mountain{
     background-image: url('../assets/mountains.png');
@@ -75,60 +76,235 @@
     position: relative;
     background: #210002;
     height: 140vh;
-}
-.uptxt{
-    color: white;
-    margin: 0;
-    font-size: 35px;
-    padding: 0 0 0 5.25vw;
-}
-.Im{
-    margin: 0;
-    padding: 0;
-    color: white;
-    font-size: 80px;
-    padding: 0 0 0 5vw;
-}
-.myname{
-    margin: 0;
-    padding: 0;
-    color: rgb(199, 134, 23);
-    font-size: 80px;
-    padding: 0 0 0 1.5vw;
-}
-.dev{
-    margin: 0;
-    padding: 0 0 0 5.25vw;
-    color: white;
-    font-size: 45px;
-}
-.ContainerBox{
-    width: 100%;
-    height: 100vh;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: left;
+    align-items: center;
+    /* justify-content: space-around; */
 }
-.splitText{
+.Alpha{
+    height: 100vh;
+    margin-bottom: 2px;
+    width: 100%;
+    /* border: 2px solid white; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.Beta1{
+    color: white;
+    margin-top: 100px;
+    margin-left: 20px;
+}
+.Beta2{
+    margin-top: 100px;
+    margin-right: 20px;
+    /* border: 2px solid greenyellow; */
+}
+.hi{
+    font-size: 40px;
+}
+.SplitText{
     display: flex;
     flex-direction: row;
 }
-
-.BottomDesign{
-    position: relative;
+.Im{
+    font-size: 80px;
+}
+.Name{
+    font-size: 80px;
+    padding-left: 1vw;
+    color: gold;
+}
+.Dev{
+    font-size: 45px;
+}
+.hi2{
+    font-size: 35px;
+}
+.SplitText2{
     display: flex;
+    flex-direction: row;
+}
+.Im2{
+    font-size: 70px;
+}
+.Name2{
+    font-size: 70px;
+    margin-left: 2vw;
+    color: gold;
+}
+.Dev2{
+    font-size: 40px;
+}
+p{
+    margin: 0;
+    padding: 0;
+}
+.sec2{
+    display: none;
+}
+@media(max-width:1300px){
+    .Beta2 img{
+        transform: scale(0.9);
+    }
+    .hi{
+        font-size: 35px;
+    }
+    .Im,.Name{
+        font-size: 70px;
+    }
+    .Dev{
+        font-size: 40px;
+    }
+}
+@media(max-width:1200px){
+    .sec .Beta2{
+        margin-top: 90px !important ;
+    }
+    .Beta2 img{
+        transform: scale(0.8);
+    }
+    .hi{
+        font-size: 31px;
+    }
+    .Im,.Name{
+        font-size: 67px;
+    }
+    .Dev{
+        font-size: 35px;
+    }
+}
+@media(max-width:1199px){
+    .Alpha{
+        display: none;
+    }
+    .sec2{
+        display: block !important;
+    }
+
+}
+.Alpha2{
+    height: 100vh;
+    width: 100%;
+    /* border: 2px solid white; */
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* height: 100vh; */
 }
-.treeImg{
+.Beta12{
+    color: white;
+    margin-top: 250px;
+}
+.Beta22{
+    transform: scale(0.7);
     position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    /* height: 100vh; */
+    top: 70px;
 }
-@media(max-width:962px) {
-    
+@media(max-width:1000px){
+    .hi2{
+        font-size: 35px;
+    }
+    .Im2,.Name2{
+        font-size: 70px;
+    }
+    .Dev2{
+        font-size: 38px;
+    }
+}
+@media(max-width:800px){
+    .Beta22{
+        transform: scale(0.6);
+    }
+    .hi2{
+        font-size: 30px;
+    }
+    .Im2,.Name2{
+        font-size: 60px;
+    }
+    .Dev2{
+        font-size: 32px;
+    }
+}
+@media(max-width:650px){
+    .Beta22{
+        transform: scale(0.55);
+    }
+    .Beta12{
+        margin-top: 200px;
+    }
+    .hi2{
+        font-size: 25px;
+    }
+    .Im2,.Name2{
+        font-size: 50px;
+    }
+    .Dev2{
+        font-size: 28px;
+    }
+}
+@media(max-width:550px){
+    #artback{
+        transform: scaleY(1.6);
+    }
+    .Beta22{
+        transform: scale(0.45);
+    }
+    .Beta12{
+        margin-top: 120px;
+    }
+    .hi2{
+        font-size: 20px;
+    }
+    .Im2,.Name2{
+        font-size: 40px;
+    }
+    .Dev2{
+        font-size: 23px;
+    }
+}
+@media(max-width:450px){
+    .Beta12{
+        margin-top: 50px;
+    }
+    .SplitText2{
+        flex-direction: column;
+    }
+    .Name2{
+        margin-left: 0vw !important;
+    }
+}
+@media (max-width:1000px){
+    #artback{
+        transform: scale(1.2);
+    }
+}
+@media (min-height: 850px){
+    .animation, .animation_layer {
+        height: 1300px;
+    }
+    #artback{
+        transform: scale(1.5);
+    }
+}
+@media (min-height: 1000px){
+    #artback{
+        transform: scale(2);
+    }
+    .animation, .animation_layer {
+        height: 1600px;
+    }
+}
+
+@media (min-height: 1200px){
+    #artback{
+        transform: scale(3);
+        top: -400px;
+    }
+    #jungle5{
+        transform: scaleY(1.25);
+        top: -250px;
+    }
+    .animation, .animation_layer {
+        height: 1950px;
+    }
 }
